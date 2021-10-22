@@ -1,13 +1,11 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-export class Employee{
-  constructor(
-    public empId:string,
-    public name:string,
-    public designation:string,
-    public salary:string,
-  ) {}
+export class Employee {
+  id: number;
+  firstName: string;
+  lastName: string;
+  emailId: string;
 }
 
 @Injectable({
@@ -19,9 +17,6 @@ export class HttpClientService {
     private httpClient:HttpClient
   ) { 
      }
-
-     
-
      getEmployees()
   {
     let basicString=this.getHeaders();

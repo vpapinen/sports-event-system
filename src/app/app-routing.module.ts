@@ -11,6 +11,7 @@ const routes: Routes = [
   { path: 'addemployee', component: AddEmployeeComponent,canActivate:[AuthGaurdService]},
   { path: 'login', component: LoginComponent },
   { path: 'logout', component: LogoutComponent,canActivate:[AuthGaurdService] },
+  
 ];
 
 @NgModule({
