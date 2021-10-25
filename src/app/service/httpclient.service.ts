@@ -36,8 +36,6 @@ export class HttpClientService {
     return this.httpClient.post<Employee>("http://localhost:8080/employees", employee);
   }
 
-
-
 getHeaders(){
   let username='admin'
   let password='password'
